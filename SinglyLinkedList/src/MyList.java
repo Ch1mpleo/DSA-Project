@@ -37,7 +37,7 @@ public class MyList {
     void addFirst(int n) {
         //------------------------------------------------------------------------------------
         //------ Start your code here---------------------------------------------------------
-        head = new Node(n, head);       //Khởi tạo head first
+        head = new Node(n, head);
 
         //------ End your code here-----------------------------------------------------------
         //------------------------------------------------------------------------------------
@@ -76,8 +76,8 @@ public class MyList {
 
         Scanner sca = new Scanner(System.in);
         System.out.print("\nAdd new tail: ");
-        int k = sca.nextInt();
-        this.addLast(k);
+        int value = sca.nextInt();
+        this.addLast(value);
 
         //------ End your code here-----------------------------------------------------------
         //------------------------------------------------------------------------------------
@@ -101,7 +101,7 @@ public class MyList {
 
             Node newNode = new Node(value);
 
-            // Insert at the beginning
+            // Thay thế head
             if (k == 0) {
                 newNode.next = head;
                 head = newNode;
