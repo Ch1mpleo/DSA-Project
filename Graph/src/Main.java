@@ -10,7 +10,8 @@ public class Main {
     public void run() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("1. Insert Node");
+            System.out.println("1. Insert Node" +
+                    "");
             System.out.println("2. Delete Node");
             System.out.println("3. Insert Edge");
             System.out.println("4. Delete Edge");
